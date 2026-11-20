@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS – margin, padding a border</title>
+    <!-- Připojení externího CSS souboru -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>CSS: margin, padding a border</h1>
+        <p class="uvod">
+            Všechny tři příklady používají element <code>&lt;div&gt;</code>
+            a vlastní třídu (<code>class</code>). Změň hodnoty v souboru
+            <code>style.css</code> a obnov stránku v prohlížeči.
+        </p>
+
+        <section class="ukazka">
+            <h2>1. Margin – vnější odsazení</h2>
+            <p>Margin určuje volné místo <strong>vně rámečku</strong> elementu.</p>
+            <div class="plocha">
+                <div class="prvni">První DIV – margin: 30px</div>
+            </div>
+            <p class="poznamka">Sleduj mezeru mezi modrým DIVem a okrajem šedé plochy.</p>
+        </section>
+
+        <section class="ukazka">
+            <h2>2. Padding – vnitřní odsazení</h2>
+            <p>Padding určuje volné místo <strong>mezi textem a rámečkem</strong> elementu.</p>
+            <div class="plocha">
+                <div class="druhy">Druhý DIV – padding: 30px</div>
+            </div>
+            <p class="poznamka">Text je dál od zeleného rámečku, ale DIV nemá nastavený margin.</p>
+        </section>
+
+        <section class="ukazka">
+            <h2>3. Border – ohraničení</h2>
+            <p>Border tvoří <strong>rámeček okolo obsahu a paddingu</strong>.</p>
+            <div class="plocha">
+                <div class="treti">Třetí DIV – border: 5px dashed red</div>
+                <div class="ctvrty">čtvrý DIV - margin: 20px, padding: 25px, border: 4px solid purple.</div>
+            </div>
+            <p class="poznamka">Tento DIV kombinuje margin, padding i výrazný červený přerušovaný rámeček.</p>
+        </section>
+
+        <section class="ukazka">
+            <h2>4. CSS Box Model</h2>
+            <p>Pořadí od středu: <strong>obsah → padding → border → margin</strong>.</p>
+            <div class="model-margin">
+                <span>margin</span>
+                <div class="model-border">
+                    <span>border</span>
+                    <div class="model-padding">
+                        <span>padding</span>
+                        <div class="model-obsah">OBSAH</div>
+                    </div>
+                </div>
+            </div>
+            <p class="poznamka">Barevný obrázek je pouze pomůcka pro pochopení jednotlivých vrstev.</p>
+        </section>
+
+        <section class="ukazka">
+            <h2>Úkol pro studenty</h2>
+            <ol>
+                <li>U prvního DIVu změň <code>margin</code> na <code>50px</code> a <code>border</code> na <code>3px solid blue</code>.</li>
+                <li>U druhého DIVu nastav <code>padding: 40px</code> a <code>background-color: lightgreen</code>.</li>
+                <li>U třetího DIVu změň rámeček na <code>5px dotted red</code>.</li>
+                <li>Všem třem DIVům nastav <code>border-radius: 15px</code>.</li>
+                <li>Přidej čtvrtý DIV s třídou <code>ctvrty</code>: <code>margin: 20px</code>, <code>padding: 25px</code>, <code>border: 4px solid purple</code>.</li>
+            </ol>
+        </section>
+    </main>
+</body>
+</html>
